@@ -1,7 +1,18 @@
-# Consumer Forecast Prediction
+# Liver Patient Prediction
 
 ## Description
-A Regression type prediction model using *Random Forest Classifier* algorithm. It uses MSE (Mean Squared Error) as the metric for prediction.
+This is colaborative team project of 4 members, where we were tasked with building 2 prediction model using different algorithms and compare both the algorithms based on some metric (e.g. accuracy, precision, etc), then display the comparision in the form of graph. 
+
+We should then test the model in:
+1) Jenkins
+2) Docker
+3) Selenium
+
+
+### Our Approach
+We used *Linear Regression* and *Random Forest Regression* as the algorithms to build this model. We chose R², MAE (Mean Absolute Error) and MSE (Mean Squared Error) as the metrics for prediction, and used **matplotlib** library for plotting comparison graph of the 2 algorithms.
+
+Then, displayed the results using flask.
 
 ## Steps
 
@@ -31,7 +42,9 @@ A Regression type prediction model using *Random Forest Classifier* algorithm. I
 6) Clicked build now
 
 #### Output
-  ![9](https://github.com/user-attachments/assets/18b19383-1538-4382-bffb-b1bea6e8db5e)
+  ![test 2](https://github.com/user-attachments/assets/d4c04859-2360-4f85-a86b-3f0518a5a83b)
+
+
 
 ### Dockers
 1) used `cd` to go forward and `cd..` to do backward, to get to the correct path in command prompt (i.e. the folder where all the files including docerfile is located.
@@ -40,8 +53,23 @@ A Regression type prediction model using *Random Forest Classifier* algorithm. I
 
 #### Output
   ##### Command Prompt
-  ![9 1](https://github.com/user-attachments/assets/77c9c5b9-49cc-47d9-92a8-534836eecefa)
+  ![test 2 1](https://github.com/user-attachments/assets/b115cf29-e080-40f9-88d3-fd36c9646be1)
 
-  
   ##### Docker Hub
-  ![9 2](https://github.com/user-attachments/assets/2f722866-12c9-48e5-9256-8fbafb10e66a)
+  ![test 2 2](https://github.com/user-attachments/assets/5f6e5a2d-f752-496f-b4a3-99c874512635)
+
+
+
+### Selenium
+1) integrated flask into app.py. And build an html file called index.html inside templates folder.
+2) created selenium_test.py file which contains the selenium code for autotesting app.py
+
+#### Output
+  ##### Flask app (Command Prompt & Web Browser)
+  ![test 2 1](https://github.com/user-attachments/assets/11cf6710-ec3b-4e9a-a613-21755a74dee3)
+
+  ##### Selenium (Command Prompt)
+
+  ![test 2 2](https://github.com/user-attachments/assets/b4c37d8c-bb8c-4f24-af09-5a6696e7de7d)
+
+
